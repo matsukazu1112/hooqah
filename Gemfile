@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.3'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-# Use SCSS for stylesheets
+# Use SCSS for stylesheetsmatsu
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -61,6 +61,12 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
   gem 'pry-rails'
+  gem 'twitter-bootstrap-rails', '3.2.2'
+  gem 'bootstrap-material-design', '0.1.4'
+  gem 'jquery-rails'
+  gem 'jquery-ui-rails'
+  gem 'therubyracer'
+  gem 'execjs'
