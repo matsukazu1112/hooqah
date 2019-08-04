@@ -1,0 +1,11 @@
+  <header class="header_top panel panel-default col-lg-12 no-profile">
+    <h2>Hooqah</h2>
+    <p>シーシャに関して情報交換し合うコミュニティーサイトです</p>
+  </header>
+  <div class="posting_form top_content">
+    <%= form_for(@question) do |f| %>
+      <%= f.text_field :text, placeholder: "例：好きなフレイバーはなんですか？" %>
+      <%= f.submit "質問する" %>
+      <%= render partial: "questions/question", collection: @questions %>      
+    <% end %>
+  </div>
