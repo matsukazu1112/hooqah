@@ -1,0 +1,7 @@
+<section class="col-md-12">
+  <div class="sct_inner">
+    <h4>→<%= answer.text %></h4>
+    <%= link_to'質問を編集する', edit_answer_path(id: answer.id) %> <br>
+    <%= link_to '回答を削除する', answer_path(answer), method: :delete, data: {confirm: "削除しますか?"} %>
+    </div>
+</section>
