@@ -4,7 +4,7 @@
     margin: $margin;
 }
 
-$base: #ec5e5f;
+$base: #ac62ff;
 $base_sub: #f09797;
 $accent: #5ec6ec;
 $text: #3b3730;
@@ -759,6 +759,9 @@ footer {
                 background-color: #ccc !important;
             }
         }
+    }
+    .questioned {
+        height: 40px;
     }
 }
 
