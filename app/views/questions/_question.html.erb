@@ -7,9 +7,9 @@
     <div class="questioned">
       <%= link_to "▶ 詳細を見る(回答#{question.answers.count}件)", question_path(question) %>
     </div>
-      <%= form_tag(new_answer_path, method: :get, class: "question_submit") do %>
-        <%= hidden_field_tag(:question_id, question.id) %>
-        <%= submit_tag("回答する") %>
-      <% end %>
+    <%= form_tag(new_answer_path, method: :get, class: "question_submit") do %>
+      <%= hidden_field_tag(:question_id, question.id) %>
+      <%= submit_tag("回答する") %>
+    <% end %>
   </div>
 </div>
