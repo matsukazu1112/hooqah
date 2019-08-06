@@ -61,12 +61,16 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-  gem 'pry-rails'
-  gem 'twitter-bootstrap-rails', '3.2.2'
-  gem 'bootstrap-material-design', '0.1.4'
-  gem 'jquery-rails'
-  gem 'jquery-ui-rails'
-  gem 'therubyracer'
-  gem 'execjs'
+gem 'pry-rails'
+gem 'twitter-bootstrap-rails', '3.2.2'
+gem 'bootstrap-material-design', '0.1.4'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'therubyracer'
+gem 'execjs'
+
+group :production do
+  gem 'rails_12factor'
+end
