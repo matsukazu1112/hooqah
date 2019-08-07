@@ -34,7 +34,7 @@
 
 ## テーブル設計
 
-```
+```sql
 CREATE TABLE `questions` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `text` text NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE `questions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 ```
 
-```
+```sql
 CREATE TABLE `answers` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `question_id` int(11) NOT NULL,
