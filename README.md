@@ -6,6 +6,9 @@
 - Ruby 2.6.3
 - Ruby on Rails 5.2.3
 
+# アーキテクチャ
+![image](https://user-images.githubusercontent.com/50113969/62639794-41595400-b97b-11e9-84a6-9564855bb00d.png)
+
 # 設計と機能一覧
 ## 画面・機能一覧
 - トップ画面
@@ -32,19 +35,24 @@
 ## テーブル設計
 
 ```
-テーブル名: questions
-id :integer not null
-text :text not null
-created_at  :datetime    not null
-updated_at  :datetime    not null
+CREATE TABLE `questions` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `text` text NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 ```
 
 ```
-テーブル名: answers
-id :integer not null
-text :text not null
-created_at  :datetime    not null
-updated_at  :datetime    not null
+CREATE TABLE `answers` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `question_id` int(11) NOT NULL,
+  `text` text NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 ```
 
 # 良かったこと
