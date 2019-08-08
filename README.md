@@ -2,6 +2,9 @@
 # 目的と背景
 自宅で購入したシーシャのセッティングでうまくいかない点が多く、シーシャ好きが集まるQ&Aサイトがあったら便利だと思い、サービスを立ち上げた。
 
+# Heroku URL
+https://hooqah.herokuapp.com/
+
 # 開発環境
 - Ruby 2.6.3
 - Ruby on Rails 5.2.3
